@@ -10,7 +10,10 @@ use std::sync::Arc;
 use std::time::Duration;
 use crate::sounds::*;
 
+pub mod mixer;
 pub mod standard_channel;
+
+pub use mixer::*;
 pub use standard_channel::*;
 
 /// Trait defining the simplest possible interface for a channel, with the
